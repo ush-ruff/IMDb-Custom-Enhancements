@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         IMDB - Custom Enhancements
+// @name         IMDb - Custom Enhancements
 // @namespace    Violentmonkey Scripts
 // @match        https://www.imdb.com/*
 // @version      0.1.0
