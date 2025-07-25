@@ -1,11 +1,14 @@
 // ==UserScript==
-// @name        IMDB - Custom Enhancements
-// @namespace   Violentmonkey Scripts
-// @match       https://www.imdb.com/*
-// @grant       none
-// @version     0.1.0
-// @author      ushruff
-// @description Setup custom keyboard shortcuts
+// @name         IMDB - Custom Enhancements
+// @namespace    Violentmonkey Scripts
+// @match        https://www.imdb.com/*
+// @version      0.1.0
+// @author       ushruff
+// @description  Setup custom keyboard shortcuts for IMDb
+// @homepageURL  https://github.com/ush-ruff/IMDb-Custom-Enhancements/
+// @downloadURL  https://github.com/ush-ruff/IMDb-Custom-Enhancements/raw/main/script.user.js
+// @grant        none
+// @license      GNU GPLv3
 // ==/UserScript==
 
 const KEYS = {
