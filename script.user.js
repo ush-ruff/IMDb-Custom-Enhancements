@@ -2,7 +2,7 @@
 // @name         IMDb - Custom Enhancements
 // @namespace    Violentmonkey Scripts
 // @match        https://www.imdb.com/*
-// @version      0.1.0
+// @version      0.1.1
 // @author       ushruff
 // @description  Setup custom keyboard shortcuts for IMDb
 // @homepageURL  https://github.com/ush-ruff/IMDb-Custom-Enhancements/
@@ -12,10 +12,10 @@
 // ==/UserScript==
 
 const KEYS = {
-  70:         () => focusSelectElement(`#suggestion-search`),                                                     // key: f
-  27:         () => clickElement(`.ipc-page-content-container[role="presentation"] a[href$="?ref_=mv_close"]`),   // key: esc
-  82:         () => clickElement(`[data-testid="hero-rating-bar__user-rating"] > .ipc-btn`),                      // key: r
-  'shift+82': () => clickElement(`.ipc-promptable-base__panel [data-testid="rate-button"]`),                      // key: shift + r
+  70: () => focusSelectElement(`#suggestion-search`),                                                     // key: f
+  27: () => clickElement(`.ipc-page-content-container[role="presentation"] a[href$="?ref_=mv_close"]`),   // key: esc
+  65: () => clickElement(`[data-testid="hero-rating-bar__user-rating"] > .ipc-btn`),                      // key: a
+  83: () => clickElement(`.ipc-promptable-base__panel [data-testid="rate-button"]`),                      // key: s
 }
 
 
