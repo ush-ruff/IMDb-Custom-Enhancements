@@ -2,7 +2,7 @@
 // @name         IMDb - Custom Enhancements
 // @namespace    Violentmonkey Scripts
 // @match        https://www.imdb.com/*
-// @version      0.2.1
+// @version      0.2.2
 // @author       ushruff
 // @description  Setup custom keyboard shortcuts for IMDb
 // @homepageURL  https://github.com/ush-ruff/IMDb-Custom-Enhancements/
@@ -159,7 +159,7 @@ function addStyle() {
       min-width: 700px;
       padding: 1rem;
       background: #1f1f1f;
-      border: 2px solid #846907;
+      border: unset;
       border-radius: 0.5rem;
       color: #b9b9b9;
       box-shadow: 0 0 10px 2px rgb(0 0 0 / 0.5);
