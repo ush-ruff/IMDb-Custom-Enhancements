@@ -2,7 +2,7 @@
 // @name         IMDb - Custom Enhancements
 // @namespace    Violentmonkey Scripts
 // @match        https://www.imdb.com/*
-// @version      0.2.0
+// @version      0.2.1
 // @author       ushruff
 // @description  Setup custom keyboard shortcuts for IMDb
 // @homepageURL  https://github.com/ush-ruff/IMDb-Custom-Enhancements/
@@ -174,21 +174,20 @@ function addStyle() {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      padding-inline: 1rem;
       border-bottom: 1px solid #333;
     }
 
     #${MODAL_ID} .${MODAL_ID}-title {
       font-size: 1.4rem;
       font-weight: 600;
-      margin: 0;
-      padding: 0.8rem 1.6rem;
+      padding-block: 0.8rem;
       border: unset;
       color: #ccc;
     }
 
     .${MODAL_ID}-close {
       font-size: 2rem;
-      padding-inline: 0.8rem;
       background: none;
       border: none;
       color: inherit;
@@ -212,6 +211,7 @@ function addStyle() {
       justify-content: space-between;
       gap: 8rem;
       padding-block: 0.75rem;
+      color: #b9b9b9;
     }
 
     #${MODAL_ID} li:not(:last-child) {
@@ -224,7 +224,7 @@ function addStyle() {
       line-height: 2;
       background: #282828;
       border-radius: 0.2rem;
-      color: #f2f2f2;
+      color: #ccc;
     }
   `
   document.head.append(styleSheet)
