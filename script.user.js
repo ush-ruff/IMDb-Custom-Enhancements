@@ -2,7 +2,7 @@
 // @name         IMDb - Custom Enhancements
 // @namespace    Violentmonkey Scripts
 // @match        https://www.imdb.com/*
-// @version      0.2.2
+// @version      0.2.3
 // @author       ushruff
 // @description  Setup custom keyboard shortcuts for IMDb
 // @homepageURL  https://github.com/ush-ruff/IMDb-Custom-Enhancements/
@@ -16,7 +16,7 @@ const KEYS = {
     action: () => focusSelectElement(`#suggestion-search`),
     label: "Search",
   },
-  "Esc": {
+  "ESCAPE": {
     action: () => clickElement(`.ipc-page-content-container[role="presentation"] a[href$="?ref_=mv_close"]`),
     label: "Close gallery/popups",
   },
