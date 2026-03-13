@@ -2,7 +2,7 @@
 // @name         IMDb - Custom Enhancements
 // @namespace    Violentmonkey Scripts
 // @match        https://www.imdb.com/*
-// @version      1.0.1
+// @version      1.0.2
 // @author       ushruff
 // @description  Setup custom keyboard shortcuts for IMDb
 // @homepageURL  https://github.com/ush-ruff/IMDb-Custom-Enhancements/
@@ -18,7 +18,7 @@ const KEYS = {
     label: "Search",
   },
   "Escape": {
-    action: () => clickElement(`.ipc-page-content-container[role="presentation"] a[href$="?ref_=mv_close"]`),
+    action: () => clickElement(`.ipc-page-content-container[role="presentation"] a[href$="?ref_=mv_close"], .ipc-promptable-base__close > button, [data-custom-modal-close]`),
     label: "Close gallery/popups",
   },
   "A": {
@@ -35,21 +35,22 @@ const KEYS = {
   }
 }
 
-const MODAL_ID = "shortcut-modal"
+const SCRIPT_ID = "IMDb-custom-enhancements"
+const MODAL_ID = "IMDb-shortcut-modal"
 
 
 // -------------------------------------------
 // Setup Dependencies
 // -------------------------------------------
 const ushruffUSKit = ensureUSKit.getUSKit()
-const { installKeyHandler, setupShortcutInfo, showShortcutInfo, clickElement, focusSelectElement } = window.ushruffUSKit
+const { registerShortcutKeys, setupShortcutInfo, showShortcutInfo, clickElement, focusSelectElement } = window.ushruffUSKit
 
 
 // -------------------------------------------
 // Event Listeners
 // -------------------------------------------
 window.addEventListener("load", () => {
-  installKeyHandler(KEYS)
+  registerShortcutKeys(SCRIPT_ID, KEYS)
   setupShortcutInfo(MODAL_ID, KEYS)
 })
 
